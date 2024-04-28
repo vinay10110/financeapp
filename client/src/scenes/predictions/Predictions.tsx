@@ -14,7 +14,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import regression, { DataPoint } from "regression";
+import regression,{DataPoint} from 'regression';
 
 const Predictions = () => {
   const { palette } = useTheme();
