@@ -1,26 +1,26 @@
 export const tokens = {
     grey: {
-      100: "#f0f0f3",
-      200: "#e1e2e7",
-      300: "#d1d3da",
-      400: "#c2c5ce",
-      500: "#b3b6c2",
-      600: "#8f929b",
-      700: "#6b6d74",
-      800: "#48494e",
-      900: "#242427",
+      100: "#000000",
+      200: "#000000",
+      300: "#000000",
+      400: "#000000",
+      500: "#000000",
+      600: "#000000",
+      700: "#000000",
+      800: "#000000",
+      900: "#000000",
     },
     primary: {
       // light green
-      100: "#d0fcf4",
-      200: "#a0f9e9",
-      300: "#71f5de",
-      400: "#41f2d3",
-      500: "#12efc8",
-      600: "#0ebfa0",
-      700: "#0b8f78",
-      800: "#076050",
-      900: "#043028",
+      100: "#d0f0fc",
+        200: "#a0e0f9",
+        300: "#71d0f5",
+        400: "#41c0f2",
+        500: "#12b0ef",
+        600: "#0e80bf",
+        700: "#0b508f",
+        800: "#073057",
+        900: "#042028"
     },
     secondary: {
       // yellow
@@ -36,7 +36,7 @@ export const tokens = {
     },
     tertiary: {
       // purple
-      500: "#8884d8",
+      500: "#f2b455",
     },
     blue:{
         100: "#d0f0fc",
@@ -51,8 +51,8 @@ export const tokens = {
        
     },
     background: {
-      light: "#1f2026",
-      main: "#2d2d34",
+      light: "#FFFFFF",
+      main: "#FFFFFF",
     },
   };
   
@@ -84,36 +84,36 @@ export const tokens = {
       },
     },
     typography: {
-      fontFamily: ["Karla", "sans-serif"].join(","),
+      fontFamily: ["Poppins", "sans-serif"].join(","),
       fontSize: 12,
       h1: {
-        fontFamily: ["Karla", "sans-serif"].join(","),
+        fontFamily: ["Poppins", "sans-serif"].join(","),
         fontSize: 32,
       },
       h2: {
-        fontFamily: ["Karla", "sans-serif"].join(","),
+        fontFamily: ["Poppins", "sans-serif"].join(","),
         fontSize: 24,
       },
       h3: {
-        fontFamily: ["Karla", "sans-serif"].join(","),
+        fontFamily: ["Poppins", "sans-serif"].join(","),
         fontSize: 20,
         fontWeight: 800,
         color: tokens.grey[200],
       },
       h4: {
-        fontFamily: ["Karla", "sans-serif"].join(","),
+        fontFamily: ["Poppins", "sans-serif"].join(","),
         fontSize: 14,
         fontWeight: 600,
         color: tokens.grey[300],
       },
       h5: {
-        fontFamily: ["Karla", "sans-serif"].join(","),
+        fontFamily: ["Poppins", "sans-serif"].join(","),
         fontSize: 12,
         fontWeight: 400,
         color: tokens.grey[500],
       },
       h6: {
-        fontFamily: ["Karla", "sans-serif"].join(","),
+        fontFamily: ["Poppins", "sans-serif"].join(","),
         fontSize: 10,
         color: tokens.grey[700],
       },
