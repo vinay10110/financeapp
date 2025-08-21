@@ -46,7 +46,7 @@ const Predictions = () => {
     <Dashboardbox width="100%" height="100%" p="1rem" overflow="hidden">
       <FlexBetween m="1rem 2.5rem" gap="1rem">
         <Box>
-          <Typography variant="h3">Revenue and Predictions</Typography>
+          <Typography variant="h3" color={palette.primary[600]}>Revenue and Predictions</Typography>
           <Typography variant="h6">
             charted revenue and predicted revenue based on a simple linear
             regression model

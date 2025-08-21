@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "mongoose": "^7.0.0",
     "mongoose-currency": "^0.2.0",
     "morgan": "^1.10.0",
+    "node-cron": "^4.2.1",
     "nodemon": "^3.1.0"
   }
 }

@@ -7,3 +7,17 @@ body,
   width:100%;
   font-family: 'Poppins';
 }
+
+/* Subtle app-wide background for a modern look */
+body {
+  background:
+    radial-gradient(600px circle at 0% 0%, rgba(139, 92, 246, 0.12), transparent 40%),
+    radial-gradient(800px circle at 100% 100%, rgba(38, 166, 154, 0.1), transparent 50%),
+    #F8FAFC;
+  background-attachment: fixed;
+}
+
+/* Smoother feel for common UI interactions */
+* {
+  transition: color 150ms ease, background-color 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}

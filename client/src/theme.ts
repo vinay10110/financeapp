@@ -1,42 +1,42 @@
 export const tokens = {
     grey: {
-      100: "#000000",
-      200: "#000000",
-      300: "#000000",
-      400: "#000000",
-      500: "#000000",
-      600: "#000000",
-      700: "#000000",
-      800: "#000000",
-      900: "#000000",
+      100: "#F8FAFC",
+      200: "#F1F5F9",
+      300: "#E2E8F0",
+      400: "#CBD5E1",
+      500: "#94A3B8",
+      600: "#64748B",
+      700: "#475569",
+      800: "#334155",
+      900: "#0F172A",
     },
     primary: {
-      // light green
-      100: "#d0f0fc",
-        200: "#a0e0f9",
-        300: "#71d0f5",
-        400: "#41c0f2",
-        500: "#12b0ef",
-        600: "#0e80bf",
-        700: "#0b508f",
-        800: "#073057",
-        900: "#042028"
+      // vibrant violet
+      100: "#EDE9FE",
+        200: "#DDD6FE",
+        300: "#C4B5FD",
+        400: "#A78BFA",
+        500: "#8B5CF6",
+        600: "#7C3AED",
+        700: "#6D28D9",
+        800: "#5B21B6",
+        900: "#4C1D95"
     },
     secondary: {
-      // yellow
-      100: "#fcf0dd",
-      200: "#fae1bb",
-      300: "#f7d299",
-      400: "#f5c377",
-      500: "#f2b455",
-      600: "#c29044",
-      700: "#916c33",
-      800: "#614822",
-      900: "#302411",
+      // teal
+      100: "#E0F2F1",
+      200: "#B2DFDB",
+      300: "#80CBC4",
+      400: "#4DB6AC",
+      500: "#26A69A",
+      600: "#009688",
+      700: "#00897B",
+      800: "#00796B",
+      900: "#00695C",
     },
     tertiary: {
-      // purple
-      500: "#f2b455",
+      // accent pink/coral
+      500: "#F43F5E",
     },
     blue:{
         100: "#d0f0fc",
@@ -51,8 +51,8 @@ export const tokens = {
        
     },
     background: {
-      light: "#FFFFFF",
-      main: "#FFFFFF",
+      paper: "#FFFFFF",
+      main: "#F8FAFC",
     },
   };
   
@@ -80,7 +80,7 @@ export const tokens = {
       },
       background: {
         default: tokens.background.main,
-        light: tokens.background.light,
+        paper: tokens.background.paper,
       },
     },
     typography: {
