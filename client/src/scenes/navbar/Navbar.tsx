@@ -16,7 +16,7 @@ const Navbar=()=>{
                 letterSpacing: '0.4px'
               }}
             >
-                finance
+                Finboard
             </Typography>
         </FlexBetween>
         <FlexBetween gap="0.75rem">

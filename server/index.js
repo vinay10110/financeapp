@@ -12,7 +12,7 @@ import productRoutes from './routes/product.js';
 import Transaction from './models/Transaction.js';
 import KPI from './models/KPI.js';
 import { kpis, products, transactions } from './data/data.js';
-import cron from 'node-cron';   // 👈 add this
+import cron from 'node-cron';  
 
 dotenv.config();
 
