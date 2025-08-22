@@ -30,11 +30,10 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
   next();
 });
-app.use(helmet());
 app.use(morgan('common'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
+
 
 // routes
 app.use("/kpi", kpiRoutes);
