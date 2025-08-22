@@ -18,14 +18,16 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+const allowedOrigin = process.env.CLIENT_ADDRESS;
+
 app.use(cors({
-  origin: `${process.env.CLIENT_ADDRESS}`,
+  origin: allowedOrigin,
   methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Content-Length', 'X-Requested-With'],
-  credentials:true
+  credentials: true
 }));
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', `${process.env.CLIENT_ADDRESS}`);
+  res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
   next();
 });
 app.use(helmet());
