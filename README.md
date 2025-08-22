@@ -26,18 +26,40 @@ Examples are provided in `client/.env.example` and `server/.env.example`.
 
 ## Setup & Run (Development)
 1) Backend
+
+macOS/Linux:
 ```
 cd server
-cp .env.example .env   # or create .env manually
+cp .env.example .env
+# edit .env to set MONGO_URL
+npm install
+npm run dev             # starts Express on port 3000
+```
+
+Windows (PowerShell):
+```
+cd server
+Copy-Item .env.example .env
 # edit .env to set MONGO_URL
 npm install
 npm run dev             # starts Express on port 3000
 ```
 
 2) Frontend
+
+macOS/Linux:
 ```
 cd client
 cp .env.example .env    # or .env.local
+# set VITE_HOST_ADDRESS to your backend URL, e.g. http://localhost:3000
+npm install
+npm run dev             # starts Vite (default: http://localhost:5173)
+```
+
+Windows (PowerShell):
+```
+cd client
+Copy-Item .env.example .env   # or .env.local
 # set VITE_HOST_ADDRESS to your backend URL, e.g. http://localhost:3000
 npm install
 npm run dev             # starts Vite (default: http://localhost:5173)
@@ -85,5 +107,15 @@ Backend (`server/package.json`):
 - CORS is enabled for development. For production, restrict origins and headers as needed.
 - The backend listens on port `3000` by default; adjust your env and client base URL accordingly.
 
-## License
-ISC
+## Production Build
+
+- Frontend
+  - Set `VITE_HOST_ADDRESS` to your production backend URL.
+  - Build: `cd client && npm run build`
+  - Local preview: `npm run preview` (serves the built `dist/` folder)
+  - Deploy `client/dist/` to any static host (Netlify, Vercel, S3, etc.).
+
+- Backend
+  - Ensure `server/.env` has a production `MONGO_URL`.
+  - Run: `cd server && npm install --omit=dev && npm start`
+  - Behind a reverse proxy (e.g., Nginx), expose port 3000 or change the port in `server/index.js` (`app.listen(3000, ...)`).
