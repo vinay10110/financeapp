@@ -2,6 +2,9 @@
 
 A full‑stack finance dashboard built with React + TypeScript (Vite) and an Express + MongoDB backend. It visualizes KPIs, products, transactions, and provides a simple revenue prediction view.
 
+## 🚀 Live Demo
+**[View Live Demo](https://finboard-frontend.vercel.app/)**
+
 ## Tech Stack
 - Frontend: React 18, TypeScript, Vite, MUI, Recharts, Redux Toolkit + RTK Query, Tailwind (utility classes)
 - Backend: Node.js, Express, Mongoose, Helmet, Morgan, CORS, dotenv
